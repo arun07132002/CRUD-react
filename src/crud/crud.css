@@ -1,0 +1,403 @@
+Button{
+    width: 100%;
+    height: 2rem;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(4, 89, 122);
+    font-size: small;
+    border-radius: 10px;
+    border: none;
+    color:rgb(247, 244, 244);
+}
+.btn-red{
+  color: rgb(245, 7, 7);
+  width: 30px;
+  height: 30px;
+  background: none;
+}
+.btn-green{
+  color: rgb(7, 187, 241);
+  width: 30px;
+  height: 30px;
+  background: none;
+}
+body{
+  /* background: black; */
+  background-image: radial-gradient(circle at center left, rgb(46, 46, 46) 0%, rgb(46, 46, 46) 6%,rgb(41, 41, 41) 6%, rgb(41, 41, 41) 27%,rgb(36, 36, 36) 27%, rgb(36, 36, 36) 42%,rgb(31, 31, 31) 42%, rgb(31, 31, 31) 63%,rgb(25, 25, 25) 63%, rgb(25, 25, 25) 64%,rgb(20, 20, 20) 64%, rgb(20, 20, 20) 71%,rgb(15, 15, 15) 71%, rgb(15, 15, 15) 100%);
+  background-repeat: none;
+  background-size: cover;
+}
+.form{
+  width: 45%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  display: flexbox;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 30px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgb(155, 92, 4);
+}
+.form-read{
+  width: 80%;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+  display: flexbox;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.card{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-read{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.input{
+  width: 100%;
+  height: 3rem;
+  border-radius: 25px;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  font-size: large;
+  margin-top: 10px;
+  color: rgb(14, 13, 13);
+}
+.input:hover{
+  border: rgb(9, 128, 175);
+}
+.label{
+  font-size: larger;
+  color: aliceblue;
+  margin-left: 1.5rem;
+  margin-bottom: 50px;
+}
+.error{
+  color: red;
+  font-size: medium;
+
+  margin-left: 1rem;
+}
+.network-error{
+  color: red;
+  font-size: larger;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.network-error p{
+  font-size: 15px;
+}
+.checkbox{
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2px;
+}
+.btn{
+  width: 20%;
+  height: 2rem;
+  border-radius: 25px;
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  margin-bottom: 1rem;
+  margin-left: 5px;
+}
+.btn:hover{
+  transform:scale(1.10) ;
+  box-shadow: 0 0 25px skyblue,
+  0 0 50px skyblue;
+  transition: .100s ease-in-out;
+}
+
+.add-btn{
+  font-weight: bold;
+  font-size: xx-large;
+  border-radius: 10px;
+  color: rgb(238, 241, 6);
+  border: none;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.read-btn{
+    color: yellow;
+}
+.read-btn:hover{
+  text-shadow: 0 0 25px rgb(180, 104, 3),
+  0 0 50px rgb(180, 104, 3),
+  0 0 175px rgb(180, 104, 3) ;
+}
+.network{
+  color: red;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 10px;
+}
+.heading{
+  color: blueviolet;
+}
+.title{
+  color: white;
+}
+/* table styling */
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: clamp(100%,260px,300px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  color: #dddddd;
+}
+.table thead tr {
+  background-color: #009879;
+  color: #0e0d0d;
+  text-align: center;
+}
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+  color: #0e0d0d;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 5px solid #009879;
+}
+.table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+.row-head{
+  width: 70%;
+}
+.Loading-tag{
+  font-size: medium;
+}
+.success-tag
+{
+  color: green;
+}
+.label{
+  font-weight: bold;
+}
+.toast{
+  background-color: red;
+  color: wheat;
+}
+/* media quary width 840px */
+@media only screen and (max-width:840px){
+  .form{
+  box-shadow: 0 0 10px rgb(50, 185, 174);
+  }
+  .Loading-tag{
+    font-size: small;
+  }
+  .form-read{
+    width: 90%;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    padding: 0.5rem;
+  }
+  .table {
+    min-width: 300px;
+  }
+
+}
+/* media quary width 620px */
+@media only screen and (max-width: 620px) {
+  .add-btn{
+    font-size: medium;
+  }
+  .error{
+    font-size: medium;
+  }
+.heading{
+    color: white;
+  }
+  .title{
+    color: blueviolet;
+  }
+  .form {
+    background-color: lightblue;
+    color:black;
+    width: 70%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flexbox;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgb(180, 171, 158);
+  }
+  .form-read{
+    width: 90%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flexbox;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    padding: 0.5rem;
+  }
+  .network-error{
+    font-size: medium;
+  }
+  .network-error p{
+    font-size: 10px;
+  }
+  .input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    font-size: medium;
+    margin-top: 5px;
+    color: rgb(124, 121, 121);
+  }
+  .btn{
+    width: 30%;
+    height: 2rem;
+    border-radius: 25px;
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    margin-bottom: 1rem;
+    margin-left: 5px;
+  }
+  .table {
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  /* Button{
+    width: 100%;
+    height: 1.5rem;
+    padding: 7px;
+    outline: none;
+    background-color: rgb(4, 89, 122);
+    font-size: smaller;
+    border-radius: 10px;
+    border: none;
+    color:rgb(247, 244, 244);
+}  */
+
+} 
+/* media quary width 530px */
+@media only screen and (max-width:530px){
+
+  .form-read{
+    width: 90%;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    padding: 0.5rem;
+  }
+  .table {
+    min-width: 250px;
+    font-size: 0.6em;
+  }
+  .table th,
+.table td {
+    padding: 3px 3px;
+}
+  Button{
+    width: 100%;
+    height: 1.2rem;
+    padding: 5px;
+    outline: none;
+    font-size: smaller;
+    border-radius: 10px;
+    border: none;
+    color:rgb(247, 244, 244);
+}
+.checkbox{
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2px;
+  font-size: small;
+}
+
+.btn-red{
+  color: rgb(245, 7, 7);
+  width: 15px;
+  height: 15px;
+  background: none;
+}
+.btn-green{
+  color: rgb(7, 187, 241);
+  width: 15px;
+  height: 15px;
+  background: none;
+}
+.add-btn{
+  font-size:small;
+}
+.error{
+  font-size: small;
+}
+
+}
+/* media quary width 300px */
+@media only screen and (max-width:300px){
+
+  .form-read{
+    width: 90%;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    padding: 0.2rem;
+  }
+  .table {
+    min-width: 220px;
+    font-size: 0.3em;
+  }
+  .table th,
+.table td {
+    padding: 1px 1px;
+}
+  Button{
+    width: 70%;
+    height: 1rem;
+    padding: 2px;
+    outline: none;
+    font-size: 5px;
+    border-radius: 10px;
+    border: none;
+    color:rgb(247, 244, 244);
+} 
+.btn{
+  font-size: x-small;
+}
+.add-btn{
+  font-size:small;
+}
+
+}
